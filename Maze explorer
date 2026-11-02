@@ -1,0 +1,17 @@
+# 1 represents a wall; 0 represents an open space.
+maze = [
+    [1, 1, 1, 1, 1],
+    [1, 0, 0, 0, 1],
+    [1, 0, 1, 0, 1],
+    [1, 0, 1, 0, 1],
+    [1, 1, 1, 1, 1],
+]
+
+start = (1, 1)
+exit_position = (3, 3)
+
+for row in maze:
+    print(" ".join("#" if cell == 1 else "." for cell in row))
+
+print("Start:", start)
+print("Exit:", exit_position)
